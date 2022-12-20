@@ -1,0 +1,151 @@
+/* General */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    color: #3b393d;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to left, #52a87d, #618f78);
+}
+
+button{
+    background-color: #52a87d;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+ 
+}
+
+button:hover {
+    background-image: linear-gradient(to left, #478566, #618f78);
+}
+
+ion-icon {
+    color: white;
+    font-weight: bolder;
+    pointer-events: none;
+}
+
+input, select {
+    padding: 1px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #478566;
+    color: rgb(2, 2, 2);
+    outline: none;
+}
+
+.hide{
+    display: none;
+}
+/* Header */
+
+.todo-container {
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background-color: #fffffff1;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.todo-container header {
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #478566;
+}
+
+#todo-form, #form-edit {
+    padding: 1rem;
+    border-bottom: 1px solid #478566;
+}
+
+#todo-form p, #form-edit p {
+    margin-bottom: 0.5rem;
+    font-weight: bolder;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 0.5rem;
+}
+
+#cancel-button {
+    margin-top: .5rem;
+}
+
+/* Toolbar */
+
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #478566;
+    display: flex;
+}
+
+#toolbar h4{
+    margin-bottom: 0.5em;
+}
+
+#search {
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select{
+    flex: 1;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #478566;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background-color: #478566;
+}
+
+.done h3 {
+    color: white;
+    text-decoration: line-through;
+}
